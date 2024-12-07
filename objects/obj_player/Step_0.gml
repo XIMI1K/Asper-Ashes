@@ -20,10 +20,32 @@ x += xspd;
 #endregion
 #region ввод для управления (y)
 yspd += grav;
-if jump_key_press && place_meeting(x, y+1, obj_wall)
+if on_ground
 {
-	yspd = jspd;
+	jump_count = 0;
+	jump_hold_timer = 0;
 }
+else
+{
+	if jump_count == 0 {jump_count = 1; };
+}
+if jump_key_buffer && jump_count < jump_max
+{
+	jump_key_buffer = false;
+	jump_buffer_time = 0;
+	jump_count++;
+	jump_hold_timer = jump_hold_frames[jump_count-1];
+	if !jump_key
+	{
+		jump_hold_timer = 0;
+	}
+	if jump_hold_timer > 0
+	{
+		yspd = jspd[jump_count - 1];
+		jump_hold_timer--;
+	}
+}
+if yspd > term_vel { yspd = term_vel; };
 #endregion
 #region коллизия по y
  _sub_pixel = .5;
@@ -34,8 +56,20 @@ if place_meeting(x, y + yspd,obj_wall)
 	{
 		y += _pixel_check;
 	}
+	if yspd < 0
+	{
+		jump_hold_timer = 0;
+	}
 	yspd = 0;
 }
+if yspd >= 0 && place_meeting(x, y+1, obj_wall)
+	{
+		on_ground = true;
+	}
+	else 
+	{
+	 on_ground = false;
+	}
 
 	y += yspd;
 #endregion
