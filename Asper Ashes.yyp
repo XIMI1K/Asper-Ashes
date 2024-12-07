@@ -40,6 +40,7 @@
     {"id":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"id":{"name":"roominit","path":"rooms/roominit/roominit.yy",},},
     {"id":{"name":"Inputs","path":"scripts/Inputs/Inputs.yy",},},
+    {"id":{"name":"s_hover","path":"sprites/s_hover/s_hover.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},},
   ],

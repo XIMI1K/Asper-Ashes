@@ -73,3 +73,49 @@ if yspd >= 0 && place_meeting(x, y+1, obj_wall)
 
 	y += yspd;
 #endregion
+#region перекаты
+if (!rolling) {
+    if (keyboard_check_pressed(vk_shift)) {
+
+
+        rolling = true; // Активируем перекат
+        roll_timer = roll_duration; // Устанавливаем таймер
+	}
+}
+		if (rolling)
+		{
+	    if (!place_meeting(x + xspd, y, obj_wall))
+		{
+        x += xspd;
+	}
+		if (!place_meeting(x, y + yspd, obj_wall))
+		{
+        y += yspd;
+    }
+    roll_timer--;
+    if (roll_timer <= 0)
+		{
+        rolling = false; // Завершаем перекат
+    }
+} 
+
+if (rolling)
+{
+    sprite_index = s_hover; // Спрайт переката
+} 
+else
+{
+    sprite_index = s_player; // Обычный спрайт
+}
+if (rolling)
+{
+    invincible = true;
+} 
+else
+{
+    invincible = false;
+}
+if (!invincible) { 
+	//тут урон типа
+}
+#endregion

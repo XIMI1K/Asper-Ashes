@@ -18,3 +18,10 @@ jump_hold_frames[1] = 10;
 jspd[1] = -4.15;
 jspd[0] = -3.85;
 #endregion
+#region перекаты
+rolling = false; // Флаг, указывающий, выполняется ли перекат
+roll_speed = 10; // Скорость переката
+roll_duration = 15; // Длительность переката (в шагах)
+roll_timer = 0; // Таймер для переката
+
+#endregion

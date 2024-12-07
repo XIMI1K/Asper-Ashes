@@ -21,6 +21,7 @@
     {"name":"obj_wall","order":17,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"roominit","order":21,"path":"rooms/roominit/roominit.yy",},
     {"name":"Inputs","order":16,"path":"scripts/Inputs/Inputs.yy",},
+    {"name":"s_hover","order":22,"path":"sprites/s_hover/s_hover.yy",},
     {"name":"s_player","order":19,"path":"sprites/s_player/s_player.yy",},
     {"name":"s_wall","order":18,"path":"sprites/s_wall/s_wall.yy",},
   ],
