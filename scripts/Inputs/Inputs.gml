@@ -1,7 +1,6 @@
 function controlsSetup()
 {
 	buffer_time = 3;
-	
 	jump_key_buffer = 0;
 	jump_buffer_time = 0;
 }

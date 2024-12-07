@@ -16,8 +16,10 @@
     {"name":"Шрифты","order":7,"path":"folders/Шрифты.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_camera","order":20,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_player","order":15,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_wall","order":17,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"roominit","order":21,"path":"rooms/roominit/roominit.yy",},
     {"name":"Inputs","order":16,"path":"scripts/Inputs/Inputs.yy",},
     {"name":"s_player","order":19,"path":"sprites/s_player/s_player.yy",},
     {"name":"s_wall","order":18,"path":"sprites/s_wall/s_wall.yy",},

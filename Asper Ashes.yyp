@@ -34,9 +34,11 @@
   },
   "name":"Asper Ashes",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Main","path":"rooms/Main/Main.yy",},},
+    {"id":{"name":"roominit","path":"rooms/roominit/roominit.yy",},},
     {"id":{"name":"Inputs","path":"scripts/Inputs/Inputs.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},},
@@ -44,6 +46,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"roominit","path":"rooms/roominit/roominit.yy",},},
     {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
   ],
   "templateType":"game",
